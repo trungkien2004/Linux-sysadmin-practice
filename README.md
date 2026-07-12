@@ -36,13 +36,30 @@ Thực hành các mức phân quyền cơ bản trên file theo chuẩn Linux: c
 
 ![Phân quyền file](img/linux4.png)
 
+### 5. Kiểm tra thông tin mạng
+Thực hành kiểm tra kết nối mạng cơ bản trên hệ thống — kỹ năng thiết yếu để chẩn đoán sự cố mạng, một trong những yêu cầu thường gặp nhất của vị trí IT Support.
+
+- Xác minh địa chỉ IP và gateway của máy thông qua giao diện mạng (ens33)
+- Kiểm tra kết nối internet bằng lệnh ping, xác nhận tỷ lệ mất gói (packet loss) bằng 0%
+- Tra cứu DNS để xác minh khả năng phân giải tên miền
+- Kiểm tra danh sách các cổng đang lắng nghe trên hệ thống
+
+**Lệnh sử dụng:** `ip a`, `ip route`, `ping`, `nslookup`, `ss -tuln`
+
+![Kiểm tra IP, gateway, kết nối internet và DNS](img/Linux5.png)
+*Xác minh địa chỉ IP, gateway, kiểm tra kết nối internet bằng ping và tra cứu DNS*
+
+![Kiểm tra các cổng đang mở trên hệ thống](img/Linux6.png)
+*Danh sách các cổng (port) đang lắng nghe trên hệ thống bằng lệnh ss*
+
+
 ## Kỹ năng đã củng cố
 
 - Quản lý file và thư mục trên dòng lệnh Linux
 - Tạo và phân quyền tài khoản người dùng (user, sudo group)
 - Kiểm soát quyền truy cập file theo mô hình phân quyền Linux (rwx)
 - Sử dụng terminal để chẩn đoán và thao tác hệ thống cơ bản
-
+- Kiểm tra và chẩn đoán kết nối mạng cơ bản (IP, gateway, DNS, cổng mạng)
 ## Môi trường thực hành
 
 Hệ điều hành Ubuntu (Linux) chạy trên nền tảng ảo hóa VMware Workstation, thao tác qua Bash Shell / Terminal.
